@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Primer empleo</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background-color: #f7f4f4;
+            margin: 0;
+        }
+
+        header {
+            background-color: #93bde0;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        nav {
+            background-color: #3d2e2e;
+            text-align: center;
+            padding: 12px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+        }
+
+        section {
+            background-color: white;
+            margin: 20px;
+            padding: 20px;
+        }
+
+        h2 {
+            color: #825ca0;
+        }
+
+        button {
+            background-color: #b56dd1;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+
+        footer {
+            background-color: #573f3f;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Primer empleo</h1>
+        <p>Bachiller Técnico en Informática</p>
+    </header>
+
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#empleos">Empleos</a>
+        <a href="#habilidades">Habilidades</a>
+    </nav>
+
+    <section id="inicio">
+        <h2>¿Qué es el primer empleo?</h2>
+
+        <p>
+            El primer empleo es una oportunidad para poner en práctica
+            los conocimientos aprendidos durante el bachillerato técnico
+            en informática y adquirir experiencia laboral.
+        </p>
+    </section>
+
+    <section id="empleos">
+        <h2>Opciones de empleo</h2>
+
+        <ul>
+            <li>Soporte técnico.</li>
+            <li>Diseño de páginas web.</li>
+            <li>Asistente informático.</li>
+            <li>Mantenimiento de computadoras.</li>
+        </ul>
+    </section>
+
+    <section id="habilidades">
+        <h2>Habilidades necesarias</h2>
+
+        <p>
+            Responsabilidad, trabajo en equipo, creatividad,
+            conocimientos de computación y ganas de aprender.
+        </p>
+
+        <button onclick="mostrarMensaje()">
+            Haz clic aquí
+        </button>
+
+        <p id="mensaje"></p>
+    </section>
+
+    <footer>
+        <p>© 2026 - Andrea Samaniego</p>
+    </footer>
+
+    <script>
+        function mostrarMensaje() {
+            document.getElementById("mensaje").innerHTML =
+                "¡Prepárate para tu futuro profesional!";
+        }
+    </script>
+
+</body>
+</html>
